@@ -1,0 +1,27 @@
+extends ../layout/index
+
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Imagen de Nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Proin tincidunt erat fringilla odio ultrices, ac dictum nunc lobortis. Pellentesque pharetra mauris non eros feugiat euismod. Aliquam ipsum eros, congue a maximus a, venenatis rutrum eros.
+                p Aliquam non convallis lacus. Vivamus quis convallis tortor. Ut ut elit in justo tincidunt lobortis in eu orci. Pellentesque tincidunt non lacus quis mattis. Nunc pharetra porta consequat. Nunc sit amet nibh lobortis, tempor sapien sit amet, aliquam nisl. Ut at est massa.
+                p Phasellus eu interdum tortor. Maecenas nec quam quam. Cras vitae risus sem. Sed blandit ligula urna, id feugiat sem commodo ut. Ut at sapien euismod, aliquam magna sit amet, vulputate mauris. Integer hendrerit malesuada nulla sed mattis. Nunc a consectetur mi. Integer faucibus velit mi, vel eleifend felis auctor at.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Ut at sapien euismod, aliquam magna sit amet, vulputate mauris. Integer hendrerit malesuada nulla sed mattis. Nunc a consectetur mi.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Ut at sapien euismod, aliquam magna sit amet, vulputate mauris. Integer hendrerit malesuada nulla sed mattis. Nunc a consectetur mi.
+                .col-md-4
+                    img(src="img/icono_precios.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejor Precio
+                    p Ut at sapien euismod, aliquam magna sit amet, vulputate mauris. Integer hendrerit malesuada nulla sed mattis. Nunc a consectetur mi.
