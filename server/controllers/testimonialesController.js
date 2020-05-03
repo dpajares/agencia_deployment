@@ -37,6 +37,7 @@ exports.agregarTestimonial = async (req, res) => {
         })
     } else {
         // almacenar en la BD
+        /*
         Testimonial.create({
             nombre,
             correo,
@@ -44,5 +45,10 @@ exports.agregarTestimonial = async (req, res) => {
         })
         .then(testimonial => res.redirect('/testimoniales'))
         .catch(error => console.log(error))
+        */
+
+        const testimonial = await Testimonial.create({ nombre, correo, mensaje })
+        //console.log(testimonial)
+        res.redirect('/testimoniales')
     }
 }
